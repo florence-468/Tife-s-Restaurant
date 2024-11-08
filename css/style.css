@@ -115,6 +115,7 @@ color: var(--secondary-color)
   justify-content: center;
   gap: 8rem;
   margin-bottom: 6rem;
+  padding-top: 10em;
  
 }
 .about-img {
@@ -148,6 +149,9 @@ span {
 }
 
 /* ================service styling============= */
+#servicesSection {
+  padding-top: 10em;
+}
 .services-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -173,6 +177,7 @@ span {
 
 .services-box p {
   font-size: 1rem;
+  font-weight: 400;
   padding-top: .8em;
 }
 /* #my {
@@ -188,8 +193,10 @@ span {
 
 
 /* =================menu styling================= */
+#menuSection {
+  padding-top: 8em;
+}
 .menu-container {
- 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -234,10 +241,11 @@ span {
   /* background-color: red; */
   position: relative;
   margin-bottom: 8rem;
+  padding-top: 5em;
 }
 .contact-us-btn {
   position: absolute;
-  top: 79px;
+  top: 150px;
   right: 0;
 }
 .contact-us-heading h2 {
@@ -256,7 +264,7 @@ span {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   gap: 5rem;
-  padding-top: 3.5em;
+  padding-top: 2em;
 }
 #myFooterSection a, .last-p {
   display: inline-block;
