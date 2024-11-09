@@ -13,10 +13,11 @@
 
 body {
   width: 100%;
+  max-width: 100%;
   font-family: "Poppins", sans-serif;
   position: relative;
   padding-top: 5.5em;
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 main, footer {
   width: 73%;
@@ -150,7 +151,7 @@ span {
 
 /* ================service styling============= */
 #servicesSection {
-  padding-top: 10em;
+  padding-top: 8em;
 }
 .services-container {
   display: grid;
@@ -201,8 +202,9 @@ span {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
  /* justify-items: center; */
- align-items: center;
- gap: 3rem;
+ place-items: center;
+ /* align-items: center; */
+ gap: 2rem;
  margin-bottom: 8rem;
  
 }
@@ -213,26 +215,54 @@ span {
 .special-heading h2 {
   color: var(--special-color);
   padding-top: .5em;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .menu-box{
+  
   position: relative;
-  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
-  padding: 2.5em;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding-block: 2em;
+  padding-inline: 1.5em;
 }
-.menu-box h3, .menu-box p, .menu-box h4 {
-  padding-top: .5em;
+.menu-box img {
+  width: 70%;
+  height: auto;
+ text-align: center;
 }
+.menu-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-text {
+  padding-top: .9em;
+  /* text-align: left; */
+}
+.menu-text p, .menu-text h4{
+  padding-bottom: .8em;
+}
+
 .menu-box h3, .menu-box h4 {
   color: var(--special-color)
 }
+.menu-box h3 {
+  font-size: 1rem;
+}
+.menu-box p, .menu-box h4{
+  font-size: .9rem;
+}
+
 .menu-shoppping-cart i {
   padding: .7em;
   background-color: var(--secondary-color);
   color: var(--background-color);
   position: absolute;
   right: 0;
+  bottom: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 
